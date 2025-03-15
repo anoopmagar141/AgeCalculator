@@ -13,6 +13,13 @@ public class age {
         // Replacing different separators with "-"
         inputDate = inputDate.replace("/", "-").replace(".", "-");
 
+        try {
+            // Parsing the birth date
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+            LocalDate birthDate = LocalDate.parse(inputDate, formatter);
+            LocalDate currentDate = LocalDate.now();
+
+         
 
         scanner.close();
     }
