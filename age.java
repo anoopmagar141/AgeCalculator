@@ -32,7 +32,10 @@ public class age {
                         age.getMonths() + " months, and " + age.getDays() + " days.");
                 System.out.println("Total days lived: " + daysLived + " days.");
             }
-        
+        } catch (Exception e) {
+            System.out.println("Invalid date format! Please enter in YYYY-MM-DD, YYYY/MM/DD, or YYYY.MM.DD format.");
+        }
+
         scanner.close();
     }
 }
