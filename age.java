@@ -22,7 +22,11 @@ public class age {
             // Validate birth date
             if (birthDate.isAfter(currentDate)) {
                 System.out.println("Invalid date! Birth date cannot be in the future.");
-            
+            } else {
+                // Calculating age
+                Period age = Period.between(birthDate, currentDate);
+                long daysLived = ChronoUnit.DAYS.between(birthDate, currentDate);
+
 
         scanner.close();
     }
