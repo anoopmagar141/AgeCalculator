@@ -27,7 +27,12 @@ public class age {
                 Period age = Period.between(birthDate, currentDate);
                 long daysLived = ChronoUnit.DAYS.between(birthDate, currentDate);
 
-
+                // Display results
+                System.out.println("\nYour age is: " + age.getYears() + " years, " +
+                        age.getMonths() + " months, and " + age.getDays() + " days.");
+                System.out.println("Total days lived: " + daysLived + " days.");
+            }
+        
         scanner.close();
     }
 }
