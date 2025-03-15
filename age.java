@@ -10,6 +10,10 @@ public class age {
         System.out.print("Enter your birthdate (YYYY-MM-DD, YYYY/MM/DD, YYYY.MM.DD): ");
         String inputDate = scanner.nextLine();
 
+        // Replacing different separators with "-"
+        inputDate = inputDate.replace("/", "-").replace(".", "-");
+
+
         scanner.close();
     }
 }
