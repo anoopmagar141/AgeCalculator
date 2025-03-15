@@ -19,7 +19,10 @@ public class age {
             LocalDate birthDate = LocalDate.parse(inputDate, formatter);
             LocalDate currentDate = LocalDate.now();
 
-         
+            // Validate birth date
+            if (birthDate.isAfter(currentDate)) {
+                System.out.println("Invalid date! Birth date cannot be in the future.");
+            
 
         scanner.close();
     }
